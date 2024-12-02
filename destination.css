@@ -93,8 +93,8 @@ body{
     padding: 10px 20px;
     border-radius: 30px;
     position: absolute;
-    right: 110px;
-    bottom: -150px; /* Places the button below the description */
+    right: 290px;
+    bottom: 190px; 
     font-weight: 600;
     font-size: 16px;
 }
@@ -106,19 +106,50 @@ body{
     border-radius: 5px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.packages .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px;
+}
+
 .packages .card img {
-    border-radius: 5px;
-    width: 100%; /* Ensures the image takes up the full width of the card */
-    height: 200px; /* Sets a fixed height for uniformity */
-    object-fit: cover; /* Ensures images are cropped to fit the specified height and width */
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
+
+.packages .card:hover img {
+    transform: scale(1.1);
+}
+
 .packages .card .card-body {
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    transition: background-color 0.3s ease;
 }
+
+.packages .card .card-body a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #194817;
+    color: white;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.packages .card .card-body a:hover {
+    background: #145314;
+    transform: scale(1.1);
+}
+
+.packages .card:hover .card-body {
+    background: #f9f9f9;
+}
+
 .packages .card .card-body .card-header {
     display: flex;
     justify-content: space-between;
@@ -143,10 +174,9 @@ body{
 .star i {
     font-size: 15px;
 }
-
 .packages .card .card-body a {
     padding: 10px;
-    margin-left: 200px;
+    margin-left: 250px;
     text-decoration: none;
     background: #194817;
     color: white;
@@ -206,11 +236,11 @@ body{
 .custom-banner-container {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 0 15px; /* Adds some padding to prevent content from touching edges on smaller devices */
+    padding: 0 15px; 
 }
 
 .custom-carousel-inner {
-    height: 300px; /* Keep the height as it is */
+    height: 300px;
 }
 
 .custom-banner-slide {
@@ -230,14 +260,13 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.4);  */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     border-radius: 50%;
-    width: 40px; /* Keep the size as it is */
-    height: 40px; /* Keep the size as it is */
+    width: 40px;
+    height: 40px;
 }
 
 .carousel-control-prev-icon:hover,
@@ -272,33 +301,33 @@ body{
 /* Media Queries for different screen sizes */
 @media (max-width: 768px) {
     .custom-banner-container {
-        padding: 0 10px; /* Slightly smaller padding on medium screens */
+        padding: 0 10px;
     }
 
     .custom-carousel-inner {
-        height: 300px; /* Keep the same height on medium devices */
+        height: 300px; 
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        width: 35px; /* Adjust icon size slightly for medium devices */
-        height: 35px; /* Adjust icon size slightly for medium devices */
+        width: 35px; 
+        height: 35px; 
     }
 }
 
 @media (max-width: 576px) {
     .custom-banner-container {
-        padding: 0 5px; /* Smaller padding on small screens */
+        padding: 0 5px;
     }
 
     .custom-carousel-inner {
-        height: 300px; /* Keep the same height on small devices */
+        height: 300px;
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        width: 30px; /* Adjust icon size slightly for small devices */
-        height: 30px; /* Adjust icon size slightly for small devices */
+        width: 30px; 
+        height: 30px; 
     }
 }
 /*Banner End*/
@@ -318,7 +347,7 @@ body{
     justify-content: center;
     position: relative;
     min-height: 500px;
-    perspective: 1500px; /* Increased depth for better 3D effect */
+    perspective: 1500px;
     overflow: hidden;
 }
 
@@ -338,21 +367,21 @@ body{
     cursor: pointer;
 }
 .custom-slider-section .custom-item {
-    width: 500px;               /* Fixed width for the card */
-    height: 500px;              /* Fixed height for the card */
-    padding: 0;                 /* Remove padding to avoid extra space */
-    border-radius: 5px;         /* Optional: for rounded corners */
-    overflow: hidden;           /* Ensures the image does not overflow the container */
-    display: flex;              /* Center the image inside the card */
+    width: 500px;             
+    height: 500px;            
+    padding: 0;                
+    border-radius: 5px;         
+    overflow: hidden;          
+    display: flex;             
     justify-content: center;    
     align-items: center;        
 }
 
 .custom-slider-section .custom-item img {
-    width: 800px;                /* Make the image fill the card width */
-    height: 100%;               /* Make the image fill the card height */
-    object-fit: cover;          /* Ensures the image covers the area without distortion */
-    border-radius: 5px;         /* Match the container's border radius */
+    width: 800px;               
+    height: 100%;              
+    object-fit: cover;          
+    border-radius: 5px;        
 }
 
 /* Description on hover */
@@ -427,8 +456,8 @@ body{
 
 /*Footer*/
 .footer {
-    background: #194817; /* Updated to your preferred color */
-    color: #ffffff; /* White text */
+    background: #194817; 
+    color: #ffffff; 
 }
 
 .footer h5 {
@@ -452,16 +481,16 @@ body{
 
 .footer .social-icons a:hover {
     transform: translateY(-5px);
-    color: #000000; /* Bootstrap primary color */
+    color: #000000; 
 }
 
 .footer form .btn {
-    background-color: #000000; /* Primary button color */
+    background-color: #000000;
     color: white;
     transition: background-color 0.3s ease;
 }
 
 .footer form .btn:hover {
-    background-color: #000000; /* Darker shade on hover */
+    background-color: #000000; 
 }
 /*Footer End*/
