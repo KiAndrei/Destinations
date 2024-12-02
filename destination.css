@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F2F1ED;
+}
+
+/* Navigation Bar CCS */
+.navbar {
+    padding: 13px 35px; 
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-left: 30px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    margin-right: 45px;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    margin-top: 0;
+}
+
+.dropdown-menu a:hover{
+    background-color: #194817;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    border-radius: 5px; 
+}
+  
+.btn-signin {
+    margin-left: 35px; 
+    padding: 8px 17px;
+    color: white;
+    background-color: #194817 ;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.btn-signin:hover {
+    background-color: #37ac1a;
+}
+
+/* Carousel CSS */
+.carousel-inner .carousel-item img {
+    width: 100%;  
+    height: 565px;  
+    object-fit: cover; 
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    height: 565px;  
+}
+
+.carousel-inner .carousel-item {
+    height: 100%;
+}
+
+/* Section Packages Start */
+.packages{
+    margin-top: 60px;
+}
+.main-txt h1 {
+    text-align: left;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span {
+    color: #000000;
+}
+
+/* CSS for the Discover More button */
+.discover-btn {
+    text-decoration: none;
+    background: #000000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: absolute;
+    right: 110px;
+    bottom: -150px; /* Places the button below the description */
+    font-weight: 600;
+    font-size: 16px;
+}
+.discover-btn:hover {
+    background: #313131;
+}
+
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.packages .card img {
+    border-radius: 5px;
+    width: 100%; /* Ensures the image takes up the full width of the card */
+    height: 200px; /* Sets a fixed height for uniformity */
+    object-fit: cover; /* Ensures images are cropped to fit the specified height and width */
+}
+.packages .card .card-body {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.packages .card .card-body .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.packages .card .card-body .card-header h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+}
+.packages .card .card-body .card-header h6 {
+    font-size: 20px;
+    margin: 0;
+}
+.packages .card .card-body p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.checked {
+    color: #ffa500;
+}
+.star i {
+    font-size: 15px;
+}
+
+.packages .card .card-body a {
+    padding: 10px;
+    margin-left: 200px;
+    text-decoration: none;
+    background: #194817;
+    color: white;
+    border-radius: 30px;
+}
+
+.packages .card .card-body a span{
+    margin-left: 20px;
+}
+/* Section Packages End */
+
+/*Categories Packages*/
+.category-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.category-card:hover {
+    transform: scale(1.05);
+}
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rating .star {
+    color: #FFD700;
+}
+.view-all-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.card-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Categories Packages End*/
+
+/*Banner*/
+.custom-banner-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px; /* Adds some padding to prevent content from touching edges on smaller devices */
+}
+
+.custom-carousel-inner {
+    height: 300px; /* Keep the height as it is */
+}
+
+.custom-banner-slide {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-banner-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.4);  */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 50%;
+    width: 40px; /* Keep the size as it is */
+    height: 40px; /* Keep the size as it is */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.custom-banner-text {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    margin: 0;                     
+}
+
+.custom-travel-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.custom-explore-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.custom-world-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    .custom-banner-container {
+        padding: 0 10px; /* Slightly smaller padding on medium screens */
+    }
+
+    .custom-carousel-inner {
+        height: 300px; /* Keep the same height on medium devices */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 35px; /* Adjust icon size slightly for medium devices */
+        height: 35px; /* Adjust icon size slightly for medium devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-banner-container {
+        padding: 0 5px; /* Smaller padding on small screens */
+    }
+
+    .custom-carousel-inner {
+        height: 300px; /* Keep the same height on small devices */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px; /* Adjust icon size slightly for small devices */
+        height: 30px; /* Adjust icon size slightly for small devices */
+    }
+}
+/*Banner End*/
+
+/*Categories Scetion*/
+.custom-slider-section {
+    width: 100%;
+}
+
+.custom-slider-section input {
+    display: none;
+}
+
+.custom-testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 500px;
+    perspective: 1500px; /* Increased depth for better 3D effect */
+    overflow: hidden;
+}
+
+.custom-testimonials .custom-item {
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #21262d;
+    position: absolute;
+    border: 3px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.5s ease, z-index 0.5s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    cursor: pointer;
+}
+.custom-slider-section .custom-item {
+    width: 500px;               /* Fixed width for the card */
+    height: 500px;              /* Fixed height for the card */
+    padding: 0;                 /* Remove padding to avoid extra space */
+    border-radius: 5px;         /* Optional: for rounded corners */
+    overflow: hidden;           /* Ensures the image does not overflow the container */
+    display: flex;              /* Center the image inside the card */
+    justify-content: center;    
+    align-items: center;        
+}
+
+.custom-slider-section .custom-item img {
+    width: 800px;                /* Make the image fill the card width */
+    height: 100%;               /* Make the image fill the card height */
+    object-fit: cover;          /* Ensures the image covers the area without distortion */
+    border-radius: 5px;         /* Match the container's border radius */
+}
+
+/* Description on hover */
+.custom-slider-section .custom-item .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 16px;
+    display: none;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Show description only on hover */
+.custom-slider-section .custom-item:hover .description {
+    display: block;
+}
+
+/* Existing 3D rotation effect styles, unchanged */
+#custom-ct-1:checked ~ .custom-testimonials label[for="custom-ct-4"],
+#custom-ct-2:checked ~ .custom-testimonials label[for="custom-ct-5"],
+#custom-ct-3:checked ~ .custom-testimonials label[for="custom-ct-1"],
+#custom-ct-4:checked ~ .custom-testimonials label[for="custom-ct-2"],
+#custom-ct-5:checked ~ .custom-testimonials label[for="custom-ct-3"] {
+    transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+    z-index: 2;
+}
+
+#custom-ct-1:checked ~ .custom-testimonials label[for="custom-ct-5"],
+#custom-ct-2:checked ~ .custom-testimonials label[for="custom-ct-1"],
+#custom-ct-3:checked ~ .custom-testimonials label[for="custom-ct-2"],
+#custom-ct-4:checked ~ .custom-testimonials label[for="custom-ct-3"],
+#custom-ct-5:checked ~ .custom-testimonials label[for="custom-ct-4"] {
+    transform: translate3d(-150px, 0, -45px) rotateY(7deg);
+    z-index: 3;
+}
+
+#custom-ct-1:checked ~ .custom-testimonials label[for="custom-ct-2"],
+#custom-ct-2:checked ~ .custom-testimonials label[for="custom-ct-3"],
+#custom-ct-3:checked ~ .custom-testimonials label[for="custom-ct-4"],
+#custom-ct-4:checked ~ .custom-testimonials label[for="custom-ct-5"],
+#custom-ct-5:checked ~ .custom-testimonials label[for="custom-ct-1"] {
+    transform: translate3d(150px, 0, -45px) rotateY(-7deg);
+    z-index: 3;
+}
+
+#custom-ct-1:checked ~ .custom-testimonials label[for="custom-ct-3"],
+#custom-ct-2:checked ~ .custom-testimonials label[for="custom-ct-4"],
+#custom-ct-3:checked ~ .custom-testimonials label[for="custom-ct-5"],
+#custom-ct-4:checked ~ .custom-testimonials label[for="custom-ct-1"],
+#custom-ct-5:checked ~ .custom-testimonials label[for="custom-ct-2"] {
+    transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+    z-index: 2;
+}
+
+#custom-ct-1:checked ~ .custom-testimonials label[for="custom-ct-1"],
+#custom-ct-2:checked ~ .custom-testimonials label[for="custom-ct-2"],
+#custom-ct-3:checked ~ .custom-testimonials label[for="custom-ct-3"],
+#custom-ct-4:checked ~ .custom-testimonials label[for="custom-ct-4"],
+#custom-ct-5:checked ~ .custom-testimonials label[for="custom-ct-5"] {
+    transform: translate3d(0, 0, 0) rotateY(0);
+    z-index: 4;
+}
+
+
+/*Categories End*/
+
+
+/*Footer*/
+.footer {
+    background: #194817; /* Updated to your preferred color */
+    color: #ffffff; /* White text */
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer .social-icons a {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    transform: translateY(-5px);
+    color: #000000; /* Bootstrap primary color */
+}
+
+.footer form .btn {
+    background-color: #000000; /* Primary button color */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.footer form .btn:hover {
+    background-color: #000000; /* Darker shade on hover */
+}
+/*Footer End*/
